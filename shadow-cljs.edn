@@ -5,7 +5,7 @@
 
  :builds {:app
           {:target :browser
-           :output-dir "public/js"
+           :output-dir "docs/js"
            :asset-path "/js"
 
            :modules
