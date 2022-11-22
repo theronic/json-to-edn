@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Convert JSON to EDN Online</title>
+    <link rel="stylesheet" href="/style.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Convert JSON to EDN Online
+<small>by <a href="http://petrustheron.com/">Petrus Theron</a></small>
+</h1>
+<div class="grid">
+    <div>
+        <h2>JSON Input</h2>
+        <textarea id="input"
+                  onchange="json_to_edn.browser.convert();"
+                  onkeyup="json_to_edn.browser.convert();"
+                  onpaste="json_to_edn.browser.convert();">{"paste": {"your": "json here"}}</textarea>
+    </div>
+    <div>
+        <h2>EDN Output (pretty-printed)</h2>
+        <textarea id="output" onfocus="this.select(-1);">edn will be here</textarea>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/app.js" charset="UTF-8"></script>
+<script>json_to_edn.browser.init();</script>
+</body>

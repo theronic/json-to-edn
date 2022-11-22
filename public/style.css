@@ -1,0 +1,14 @@
+body {
+    font-family: "Fira Code", Monospace;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+textarea {
+    height: 70vh;
+    width: 48vw;
+}
